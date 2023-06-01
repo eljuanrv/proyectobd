@@ -1,4 +1,52 @@
 {
+  "54287413-e71f-4064-aab6-983ba8b55787": {
+    "connectionRef": {
+      "authenticationType": "mysqlAuthentication",
+      "displayName": "Azure Database for MySQL",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1629/1.0.1629.3253/azuremysql/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_azuremysql",
+      "sharedConnectionId": "/providers/microsoft.powerapps/apis/shared_azuremysql/connections/55c8f37c7b6e473db63507a32962878f"
+    },
+    "datasets": {
+      "bd-escuela.mysql.database.azure.com,escuela": {
+        "dataSources": {
+          "escuela.accesossp": {
+            "tableName": "[escuela].[accesossp]"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "escuela.accesossp"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "54287413-e71f-4064-aab6-983ba8b55787"
+  },
+  "666d2dc8-a200-4407-a0f3-b9e287933933": {
+    "connectionRef": {
+      "authenticationType": "mysqlAuthentication",
+      "displayName": "Azure Database for MySQL",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1629/1.0.1629.3253/azuremysql/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_azuremysql",
+      "sharedConnectionId": "/providers/microsoft.powerapps/apis/shared_azuremysql/connections/b11d130a09834540b128faf10e366d86"
+    },
+    "datasets": {
+      "bd-escuela.mysql.database.azure.com,escuela": {
+        "dataSources": {
+          "escuela.accesossm": {
+            "tableName": "[escuela].[accesossm]"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "escuela.accesossm"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "666d2dc8-a200-4407-a0f3-b9e287933933"
+  },
   "6cfe292c-67bb-436f-a4cc-34e173346af3": {
     "connectionRef": {
       "apiTier": "Premium",

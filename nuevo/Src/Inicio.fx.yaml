@@ -47,6 +47,7 @@ Inicio As screen:
         Height: =150
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(12, 126, 44, 1), -20%)
+        OnSelect: =Navigate(Salones_alumnos)
         RadiusBottomLeft: =150
         RadiusBottomRight: =150
         RadiusTopLeft: =150
@@ -67,12 +68,13 @@ Inicio As screen:
         Height: =150
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(12, 126, 44, 1), -20%)
+        OnSelect: =Navigate(acceso)
         RadiusBottomLeft: =150
         RadiusBottomRight: =150
         RadiusTopLeft: =150
         RadiusTopRight: =150
         Size: =30
-        Text: ="Administrar BD"
+        Text: ="Administrar Maestros"
         Width: =387
         X: =158
         Y: =436

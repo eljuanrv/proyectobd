@@ -131,8 +131,10 @@
   "ScreenOrder": [
     "Inicio",
     "Salones_alumnos",
+    "salones_maestros",
     "accesos_Alumnos",
     "accesos_Maestros",
-    "acceso"
+    "acceso",
+    "Screen1"
   ]
 }

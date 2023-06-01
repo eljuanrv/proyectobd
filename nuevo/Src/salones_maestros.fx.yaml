@@ -1,8 +1,8 @@
-Salones_alumnos As screen:
+salones_maestros As screen:
     Fill: =RGBA(29, 29, 29, 1)
     LoadingSpinnerColor: =RGBA(12, 126, 44, 1)
 
-    "'47' As label":
+    "'47_1' As label":
         Align: =Align.Center
         BorderColor: =RGBA(135, 190, 82, 1)
         Color: =RGBA(255, 255, 255, 1)
@@ -12,7 +12,7 @@ Salones_alumnos As screen:
             If(cuarenta_siete.ESTADO="OCUPADO",RGBA(141, 0, 0, 1),RGBA(141, 198, 63, 1))
         FontWeight: =FontWeight.Bold
         Height: =162
-        OnSelect: =Navigate(accesos_Alumnos)
+        OnSelect: =Navigate(accesos_Maestros)
         Size: =60
         Text: ="47"
         Width: =219
@@ -20,7 +20,7 @@ Salones_alumnos As screen:
         Y: =224
         ZIndex: =1
 
-    "'46' As label":
+    "'46_1' As label":
         Align: =Align.Center
         BorderColor: =RGBA(135, 190, 82, 1)
         Color: =RGBA(255, 255, 255, 1)
@@ -35,7 +35,7 @@ Salones_alumnos As screen:
         Y: =224
         ZIndex: =2
 
-    "'45' As label":
+    "'45_1' As label":
         Align: =Align.Center
         BorderColor: =RGBA(135, 190, 82, 1)
         Color: =RGBA(255, 255, 255, 1)
@@ -50,7 +50,7 @@ Salones_alumnos As screen:
         Y: =224
         ZIndex: =3
 
-    "'44' As label":
+    "'44_1' As label":
         Align: =Align.Center
         BorderColor: =RGBA(135, 190, 82, 1)
         Color: =RGBA(255, 255, 255, 1)
@@ -65,7 +65,7 @@ Salones_alumnos As screen:
         Y: =530
         ZIndex: =4
 
-    "'43' As label":
+    "'43_1' As label":
         Align: =Align.Center
         BorderColor: =RGBA(135, 190, 82, 1)
         Color: =RGBA(255, 255, 255, 1)
@@ -80,7 +80,7 @@ Salones_alumnos As screen:
         Y: =530
         ZIndex: =5
 
-    "'42' As label":
+    "'42_1' As label":
         Align: =Align.Center
         BorderColor: =RGBA(135, 190, 82, 1)
         Color: =RGBA(255, 255, 255, 1)
@@ -95,7 +95,7 @@ Salones_alumnos As screen:
         Y: =530
         ZIndex: =6
 
-    Label3 As label:
+    Label3_1 As label:
         Align: =Align.Center
         BorderColor: =RGBA(135, 190, 82, 1)
         Color: =RGBA(255, 255, 255, 1)
@@ -110,7 +110,7 @@ Salones_alumnos As screen:
         Y: =53
         ZIndex: =7
 
-    Icon1 As icon.ChevronLeft:
+    Icon1_1 As icon.ChevronLeft:
         BorderColor: =RGBA(135, 190, 82, 1)
         Color: =RGBA(135, 190, 82, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)

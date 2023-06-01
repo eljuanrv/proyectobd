@@ -21,8 +21,8 @@ acceso As screen:
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(12, 126, 44, 1), -20%)
         OnSelect: |+
-            =Set(clasificacion,First(CustomVision.ClassifyImageV2("12fd2fe4-e3d2-4901-b662-e7aff748aea3","Iteration4",camara.Photo).predictions));
-            If(clasificacion.tagName="JUAN",Set(as,3),Set(as,4));
+            =Set(clasificacion,First(CustomVision.ClassifyImageV2("12fd2fe4-e3d2-4901-b662-e7aff748aea3","Iteration5",camara.Photo).predictions));
+            If(clasificacion.tagName="JUAN",Navigate(salones_maestros), Notify("Usuario Incorrecto"));
             
         Size: =30
         Text: ="Ingresar"
@@ -30,4 +30,15 @@ acceso As screen:
         X: =543
         Y: =612
         ZIndex: =2
+
+    Icon1_4 As icon.ChevronLeft:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        Color: =RGBA(135, 190, 82, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Icon: =Icon.ChevronLeft
+        OnSelect: =Back()
+        X: =40
+        Y: =40
+        ZIndex: =3
 
