@@ -1303,36 +1303,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.num_control"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.num_control",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "num_control",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.alumnos47"
                 }
               ],

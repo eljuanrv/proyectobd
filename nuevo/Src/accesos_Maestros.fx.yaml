@@ -88,13 +88,13 @@
 
         CVE_MAE_Columna1 As dataTableColumn.textualColumn:
             DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="CVE_MAE"
+            FieldDisplayName: ="MAESTRO"
             FieldName: ="CVE_MAE"
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             Order: =5
-            Text: =ThisItem.CVE_MAE
+            Text: =If(ThisItem.CVE_MAE="P0001","JESSICA ALVARES",ThisItem.CVE_MAE)
             Width: =100
             X: =0
             Y: =0

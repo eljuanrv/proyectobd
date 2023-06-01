@@ -3,9 +3,9 @@ App As appinfo:
     OnStart: |
         =//UsuariosdeOffice365.MyProfileV2() JUAN.RIVERA@studentambassadors.com
         Set(usuario,UsuariosdeOffice365.MyProfileV2().mail);
-        //Set(num_control;Left(usuario;9));;
-        //Set(num_control;Right(num_control;8));;
-        Set(num_control,"18031045");
+        Set(num_control,Left(usuario,9));
+        Set(num_control,Right(num_control,8));
+        //Set(num_control;"18031045");;
         Refresh('escuela.accesossa');
         Refresh('escuela.salones');
         Set(cuarenta_siete,First(Filter('escuela.salones',ID_SALON="47")));
