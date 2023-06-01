@@ -21,7 +21,9 @@ Screen1 As screen:
         HoverFill: =RGBA(53, 74, 36, .2)
         InputFill: =RGBA(0, 0, 0, 1)
         InvertedColor: =RGBA(255, 255, 255, 1)
-        Items: ='escuela.accesossp'
+        Items: |-
+            =//'escuela.accesossm'
+            Filter('escuela.accesossm',Text( DateTimeValue( Left(Text(FECHA),10)),DateTimeFormat.ShortDate)=Text(calendario_2.SelectedDate))
         LinkColor: =ColorFade(RGBA(0, 134, 208, 1), 30%)
         PrimaryColor1: =RGBA(12, 126, 44, 1)
         PrimaryColor2: =RGBA(135, 190, 82, 1)
@@ -34,45 +36,63 @@ Screen1 As screen:
         Y: =66
         ZIndex: =1
 
-        FECHA_Columna7 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="FECHA"
-            FieldName: ="FECHA"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =1
-            Text: =ThisItem.FECHA
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =1
-
-        ENTRADA_Columna4 As dataTableColumn.textualColumn:
+        ENTRADA_Columna6 As dataTableColumn.textualColumn:
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="ENTRADA"
             FieldName: ="ENTRADA"
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
-            Order: =2
+            Order: =1
             Text: =ThisItem.ENTRADA
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+        FECHA_Columna9 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="FECHA"
+            FieldName: ="FECHA"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =2
+            Text: =ThisItem.FECHA
             Width: =100
             X: =0
             Y: =0
             ZIndex: =2
 
-        SALIDA_Columna4 As dataTableColumn.textualColumn:
+        CVE_MAE_Columna2 As dataTableColumn.textualColumn:
             DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="SALIDA"
-            FieldName: ="SALIDA"
+            FieldDisplayName: ="CVE_MAE"
+            FieldName: ="CVE_MAE"
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             Order: =3
-            Text: =ThisItem.SALIDA
+            Text: =ThisItem.CVE_MAE
             Width: =100
             X: =0
             Y: =0
             ZIndex: =3
+
+    calendario_2 As datepicker:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        CalendarHeaderFill: =RGBA(12, 126, 44, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 0, 0, 1)
+        Height: =88
+        HoverDateFill: =RGBA(53, 74, 36, 1)
+        IconBackground: =RGBA(12, 126, 44, 1)
+        SelectedDateFill: =RGBA(12, 126, 44, 1)
+        Size: =22
+        Width: =314
+        X: =344
+        Y: =514
+        ZIndex: =2
 
