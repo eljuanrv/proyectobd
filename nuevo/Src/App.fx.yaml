@@ -8,6 +8,7 @@ App As appinfo:
         //Set(num_control;"18031045");;
         Refresh('escuela.accesossa');
         Refresh('escuela.salones');
+        Refresh('escuela.accesossm');
         Set(cuarenta_siete,First(Filter('escuela.salones',ID_SALON="47")));
         ClearCollect(accesos47,Filter('escuela.accesossa',ID_SALON="47"));
         Set(alumnos47,Distinct(accesos47,NUM_CONTROL));
