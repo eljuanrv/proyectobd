@@ -604,6 +604,86 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "accesos_Maestros.DataTable1_1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "accesos_Maestros.DataTable1_1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 68,
+                  "charOffset": 50,
+                  "snippet": {
+                    "text": "Text( DateTimeValue( Left(Text(FECHA);10));DateTimeFormat.ShortDate)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "accesos_Maestros",
+                "type": "accesos_Maestros.DataTable1_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Text"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "accesos_Maestros.DataTable1_1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "accesos_Maestros.DataTable1_1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 118,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "accesos_Maestros",
+                "type": "accesos_Maestros.DataTable1_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "accesos_Alumnos.DataTable1.Items"
                 }
               ],

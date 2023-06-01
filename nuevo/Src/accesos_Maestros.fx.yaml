@@ -21,7 +21,9 @@
         HoverFill: =RGBA(53, 74, 36, .2)
         InputFill: =RGBA(0, 0, 0, 1)
         InvertedColor: =RGBA(255, 255, 255, 1)
-        Items: ='escuela.accesossm'
+        Items: |-
+            =//'escuela.accesossm'
+            Filter('escuela.accesossm',Text( DateTimeValue( Left(Text(FECHA),10)),DateTimeFormat.ShortDate)=Text(calendario_1.SelectedDate))
         LinkColor: =ColorFade(RGBA(0, 134, 208, 1), 30%)
         PrimaryColor1: =RGBA(12, 126, 44, 1)
         PrimaryColor2: =RGBA(135, 190, 82, 1)
