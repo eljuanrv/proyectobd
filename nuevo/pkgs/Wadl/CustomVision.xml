@@ -1,0 +1,300 @@
+<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://msmanaged-na.azure-apim.net/apim/cognitiveservicescustomvision" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="CustomVision" xmlns="http://wadl.dev.java.net/2009/02">
+  <doc title="Custom Vision">Azure Custom Vision Service es un producto de Microsoft Cognitive Services para etiquetar imágenes con el modelo personalizado de Computer Vision.</doc>
+  <grammars>
+    <jsonTypes targetNamespace="https://msmanaged-na.azure-apim.net/apim/cognitiveservicescustomvision" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+      <string name="PredictImageURL_Request_Url_def" />
+      <object name="PredictImageURL_Request">
+        <property name="Url" type="string" />
+      </object>
+      <string name="PredictImage_Request" />
+      <dateTimeString name="PredictImageURL_Response_Created_def" />
+      <string name="PredictImageURL_Response_Id_def" />
+      <string name="PredictImageURL_Response_Iteration_def" />
+      <number name="PredictImageURL_Response_Predictions_def_items_def_Probability_def" />
+      <string name="PredictImageURL_Response_Predictions_def_items_def_Tag_def" />
+      <string name="PredictImageURL_Response_Predictions_def_items_def_TagId_def" />
+      <object name="PredictImageURL_Response_Predictions_def_items_def">
+        <property name="Probability" type="number" />
+        <property name="Tag" type="string" />
+        <property name="TagId" type="string" />
+      </object>
+      <array typeRef="PredictImageURL_Response_Predictions_def_items_def" name="PredictImageURL_Response_Predictions_def" />
+      <string name="PredictImageURL_Response_Project_def" />
+      <object name="PredictImageURL_Response">
+        <property name="Created" typeRef="PredictImageURL_Response_Created_def" />
+        <property name="Id" type="string" />
+        <property name="Iteration" type="string" />
+        <property name="Predictions" typeRef="PredictImageURL_Response_Predictions_def" />
+        <property name="Project" type="string" />
+      </object>
+      <string name="PredictImage_ResponseV2_id_def" />
+      <string name="PredictImage_ResponseV2_project_def" />
+      <string name="PredictImage_ResponseV2_iteration_def" />
+      <dateTimeString name="PredictImage_ResponseV2_created_def" />
+      <number name="PredictImage_ResponseV2_Predictions_def_items_def_probability_def" />
+      <string name="PredictImage_ResponseV2_Predictions_def_items_def_tagName_def" />
+      <string name="PredictImage_ResponseV2_Predictions_def_items_def_tagId_def" />
+      <number name="PredictImage_ResponseV2_Predictions_def_items_def_boundingBox_def_left_def" />
+      <number name="PredictImage_ResponseV2_Predictions_def_items_def_boundingBox_def_top_def" />
+      <number name="PredictImage_ResponseV2_Predictions_def_items_def_boundingBox_def_width_def" />
+      <number name="PredictImage_ResponseV2_Predictions_def_items_def_boundingBox_def_height_def" />
+      <object name="PredictImage_ResponseV2_Predictions_def_items_def_boundingBox_def">
+        <property name="left" type="number" />
+        <property name="top" type="number" />
+        <property name="width" type="number" />
+        <property name="height" type="number" />
+      </object>
+      <object name="PredictImage_ResponseV2_Predictions_def_items_def">
+        <property name="probability" type="number" />
+        <property name="tagName" type="string" />
+        <property name="tagId" type="string" />
+        <property name="boundingBox" typeRef="PredictImage_ResponseV2_Predictions_def_items_def_boundingBox_def" />
+      </object>
+      <array typeRef="PredictImage_ResponseV2_Predictions_def_items_def" name="PredictImage_ResponseV2_Predictions_def" />
+      <object name="PredictImage_ResponseV2">
+        <property name="id" type="string" />
+        <property name="project" type="string" />
+        <property name="iteration" type="string" />
+        <property name="created" typeRef="PredictImage_ResponseV2_created_def" />
+        <property name="Predictions" typeRef="PredictImage_ResponseV2_Predictions_def" />
+      </object>
+      <string name="PredictImage_ResponseV3_id_def" />
+      <string name="PredictImage_ResponseV3_project_def" />
+      <string name="PredictImage_ResponseV3_iteration_def" />
+      <dateTimeString name="PredictImage_ResponseV3_created_def" />
+      <number name="PredictImage_ResponseV3_predictions_def_items_def_probability_def" />
+      <string name="PredictImage_ResponseV3_predictions_def_items_def_tagName_def" />
+      <string name="PredictImage_ResponseV3_predictions_def_items_def_tagId_def" />
+      <number name="PredictImage_ResponseV3_predictions_def_items_def_boundingBox_def_left_def" />
+      <number name="PredictImage_ResponseV3_predictions_def_items_def_boundingBox_def_top_def" />
+      <number name="PredictImage_ResponseV3_predictions_def_items_def_boundingBox_def_width_def" />
+      <number name="PredictImage_ResponseV3_predictions_def_items_def_boundingBox_def_height_def" />
+      <object name="PredictImage_ResponseV3_predictions_def_items_def_boundingBox_def">
+        <property name="left" type="number" />
+        <property name="top" type="number" />
+        <property name="width" type="number" />
+        <property name="height" type="number" />
+      </object>
+      <object name="PredictImage_ResponseV3_predictions_def_items_def">
+        <property name="probability" type="number" />
+        <property name="tagName" type="string" />
+        <property name="tagId" type="string" />
+        <property name="boundingBox" typeRef="PredictImage_ResponseV3_predictions_def_items_def_boundingBox_def" />
+      </object>
+      <array typeRef="PredictImage_ResponseV3_predictions_def_items_def" name="PredictImage_ResponseV3_predictions_def" />
+      <object name="PredictImage_ResponseV3">
+        <property name="id" type="string" />
+        <property name="project" type="string" />
+        <property name="iteration" type="string" />
+        <property name="created" typeRef="PredictImage_ResponseV3_created_def" />
+        <property name="predictions" typeRef="PredictImage_ResponseV3_predictions_def" />
+      </object>
+    </jsonTypes>
+  </grammars>
+  <resources siena:authenticationProviderHref="#PowerAppAuth" base="https://msmanaged-na.azure-apim.net/apim/cognitiveservicescustomvision">
+    <resource path="/{connectionId}/customvision/v1.0/Prediction/{projectId}/url">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="projectId" type="xs:string" required="true">
+        <doc title="El id. del proyecto de Custom Vision." />
+      </param>
+      <method siena:requiresAuthentication="true" name="POST" id="PredictImageURL" actionName="PredictImageURL" visibility="advanced" siena:isDeprecated="true">
+        <doc title="Predecir etiquetas de la dirección URL de la imagen&#xA;Permite predecir las etiquetas de una imagen ubicada en la dirección URL especificada." />
+        <request>
+          <param style="query" name="iterationId" type="xs:string">
+            <doc title="El id. de una determinada iteración que se evaluará. Se utilizará la iteración predeterminada del proyecto cuando no se especifique otra." />
+          </param>
+          <param style="header" name="Content-Type" type="xs:string" required="true" fixed=" application/json" />
+          <representation mediaType="application/json">
+            <param style="plain" name="Url" path="/Url" type="xs:string" required="true" />
+          </representation>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:PredictImageURL_Response" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/customvision/v1.0/Prediction/{projectId}/image">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="projectId" type="xs:string" required="true">
+        <doc title="El id. del proyecto de Custom Vision." />
+      </param>
+      <method siena:requiresAuthentication="true" name="POST" id="PredictImage" actionName="PredictImage" visibility="important" siena:isDeprecated="true">
+        <doc title="Predecir etiquetas de la imagen&#xA;Permite predecir las etiquetas de una imagen en función de su contenido." />
+        <request>
+          <param style="query" name="iterationId" type="xs:string">
+            <doc title="El id. de una determinada iteración que se evaluará. Se utilizará la iteración predeterminada del proyecto cuando no se especifique otra." />
+          </param>
+          <param style="header" name="Content-Type" type="xs:string" required="true" fixed=" application/octet-stream" />
+          <representation mediaType="application/octet-stream" />
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:PredictImageURL_Response" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/customvision/v3.0/Prediction/{projectId}/classify/iterations/{publishedName}/url">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="projectId" type="xs:string" required="true">
+        <doc title="El id. del proyecto de Custom Vision." />
+      </param>
+      <param style="template" name="publishedName" type="xs:string" required="true">
+        <doc title="El nombre del modelo con el que se evaluará." />
+      </param>
+      <method siena:requiresAuthentication="true" name="POST" id="ClassifyImageUrl" actionName="ClassifyImageUrl" visibility="advanced" siena:isDeprecated="true" siena:family="ClassifyImageUrl" siena:revision="1" siena:status="Production">
+        <doc title="Clasificar la dirección URL de una imagen&#xA;Clasifique una imagen ubicada en la dirección URL especificada." />
+        <request>
+          <param style="header" name="Content-Type" type="xs:string" required="true" fixed=" application/json" />
+          <representation mediaType="application/json">
+            <param style="plain" name="Url" path="/Url" type="xs:string" required="true" />
+          </representation>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:PredictImage_ResponseV2" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/customvision/v3.0/Prediction/{projectId}/classify/iterations/{publishedName}/image">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="projectId" type="xs:string" required="true">
+        <doc title="El id. del proyecto de Custom Vision." />
+      </param>
+      <param style="template" name="publishedName" type="xs:string" required="true">
+        <doc title="El nombre del modelo con el que se evaluará." />
+      </param>
+      <method siena:requiresAuthentication="true" name="POST" id="ClassifyImage" actionName="ClassifyImage" visibility="important" siena:isDeprecated="true" siena:family="ClassifyImage" siena:revision="1" siena:status="Production">
+        <doc title="Clasificar una imagen&#xA;Clasifique una imagen en función de su contenido." />
+        <request>
+          <param style="header" name="Content-Type" type="xs:string" required="true" fixed=" application/octet-stream" />
+          <representation mediaType="application/octet-stream" />
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:PredictImage_ResponseV2" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/customvision/v3.0/Prediction/{projectId}/detect/iterations/{publishedName}/url">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="projectId" type="xs:string" required="true">
+        <doc title="El id. del proyecto de Custom Vision." />
+      </param>
+      <param style="template" name="publishedName" type="xs:string" required="true">
+        <doc title="El nombre del modelo con el que se evaluará." />
+      </param>
+      <method siena:requiresAuthentication="true" name="POST" id="DetectImageUrl" actionName="DetectImageUrl" visibility="advanced" siena:isDeprecated="true" siena:family="DetectImageUrl" siena:revision="1" siena:status="Production">
+        <doc title="Detectar objetos en la dirección URL de una imagen&#xA;Detecte objetos en una imagen ubicada en la dirección URL especificada." />
+        <request>
+          <param style="header" name="Content-Type" type="xs:string" required="true" fixed=" application/json" />
+          <representation mediaType="application/json">
+            <param style="plain" name="Url" path="/Url" type="xs:string" required="true" />
+          </representation>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:PredictImage_ResponseV2" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/customvision/v3.0/Prediction/{projectId}/detect/iterations/{publishedName}/image">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="projectId" type="xs:string" required="true">
+        <doc title="El id. del proyecto de Custom Vision." />
+      </param>
+      <param style="template" name="publishedName" type="xs:string" required="true">
+        <doc title="El nombre del modelo con el que se evaluará." />
+      </param>
+      <method siena:requiresAuthentication="true" name="POST" id="DetectImage" actionName="DetectImage" visibility="important" siena:isDeprecated="true" siena:family="DetectImage" siena:revision="1" siena:status="Production">
+        <doc title="Detectar objetos en una imagen&#xA;Detecte objetos en una imagen en función de su contenido." />
+        <request>
+          <param style="header" name="Content-Type" type="xs:string" required="true" fixed=" application/octet-stream" />
+          <representation mediaType="application/octet-stream" />
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:PredictImage_ResponseV2" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/v2/customvision/v3.0/Prediction/{projectId}/classify/iterations/{publishedName}/url">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="projectId" type="xs:string" required="true">
+        <doc title="El id. del proyecto de Custom Vision." />
+      </param>
+      <param style="template" name="publishedName" type="xs:string" required="true">
+        <doc title="El nombre del modelo con el que se evaluará." />
+      </param>
+      <method siena:requiresAuthentication="true" name="POST" id="ClassifyImageUrlV2" actionName="ClassifyImageUrlV2" visibility="advanced" siena:isDeprecated="false" siena:family="ClassifyImageUrl" siena:revision="2" siena:status="Production">
+        <doc title="Clasificar la dirección URL de una imagen (V2)&#xA;Clasifique una imagen ubicada en la dirección URL especificada (V2)." />
+        <request>
+          <representation mediaType="application/json">
+            <param style="plain" name="Url" path="/Url" type="xs:string" required="true" />
+          </representation>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:PredictImage_ResponseV3" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/v2/customvision/v3.0/Prediction/{projectId}/classify/iterations/{publishedName}/image">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="projectId" type="xs:string" required="true">
+        <doc title="El id. del proyecto de Custom Vision." />
+      </param>
+      <param style="template" name="publishedName" type="xs:string" required="true">
+        <doc title="El nombre del modelo con el que se evaluará." />
+      </param>
+      <method siena:requiresAuthentication="true" name="POST" id="ClassifyImageV2" actionName="ClassifyImageV2" visibility="important" siena:isDeprecated="false" siena:family="ClassifyImage" siena:revision="2" siena:status="Production">
+        <doc title="Clasificar una imagen (V2)&#xA;Clasifique una imagen en función de su contenido (V2)." />
+        <request>
+          <representation mediaType="application/octet-stream" />
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:PredictImage_ResponseV3" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/v2/customvision/v3.0/Prediction/{projectId}/detect/iterations/{publishedName}/url">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="projectId" type="xs:string" required="true">
+        <doc title="El id. del proyecto de Custom Vision." />
+      </param>
+      <param style="template" name="publishedName" type="xs:string" required="true">
+        <doc title="El nombre del modelo con el que se evaluará." />
+      </param>
+      <method siena:requiresAuthentication="true" name="POST" id="DetectImageUrlV2" actionName="DetectImageUrlV2" visibility="advanced" siena:isDeprecated="false" siena:family="DetectImageUrl" siena:revision="2" siena:status="Production">
+        <doc title="Detectar objetos en la dirección URL de una imagen (V2)&#xA;Detecte objetos en una imagen ubicada en la dirección URL especificada (V2)." />
+        <request>
+          <representation mediaType="application/json">
+            <param style="plain" name="Url" path="/Url" type="xs:string" required="true" />
+          </representation>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:PredictImage_ResponseV3" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/v2/customvision/v3.0/Prediction/{projectId}/detect/iterations/{publishedName}/image">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="projectId" type="xs:string" required="true">
+        <doc title="El id. del proyecto de Custom Vision." />
+      </param>
+      <param style="template" name="publishedName" type="xs:string" required="true">
+        <doc title="El nombre del modelo con el que se evaluará." />
+      </param>
+      <method siena:requiresAuthentication="true" name="POST" id="DetectImageV2" actionName="DetectImageV2" visibility="important" siena:isDeprecated="false" siena:family="DetectImage" siena:revision="2" siena:status="Production">
+        <doc title="Detectar objetos en una imagen (V2)&#xA;Detecte objetos en una imagen en función de su contenido (V2)." />
+        <request>
+          <representation mediaType="application/octet-stream" />
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:PredictImage_ResponseV3" />
+        </response>
+      </method>
+    </resource>
+  </resources>
+  <authenticationProviders xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <connectionProvider id="PowerAppAuth" siena:connectionProviderId="shared_cognitiveservicescustomvision" />
+  </authenticationProviders>
+  <template xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <variable name="connectionId">
+      <modifyParams style="template" name="connectionId" attribute="fixed" />
+    </variable>
+  </template>
+</application>

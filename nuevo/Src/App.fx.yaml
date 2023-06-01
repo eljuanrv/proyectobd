@@ -1,0 +1,21 @@
+App As appinfo:
+    BackEnabled: =false
+    OnStart: |
+        =//UsuariosdeOffice365.MyProfileV2() JUAN.RIVERA@studentambassadors.com
+        Set(usuario,UsuariosdeOffice365.MyProfileV2().mail);
+        //Set(num_control;Left(usuario;9));;
+        //Set(num_control;Right(num_control;8));;
+        Set(num_control,"18031045");
+        Refresh('escuela.accesossa');
+        Refresh('escuela.salones');
+        Set(cuarenta_siete,First(Filter('escuela.salones',ID_SALON="47")));
+        ClearCollect(accesos47,Filter('escuela.accesossa',ID_SALON="47"));
+        Set(alumnos47,Distinct(accesos47,NUM_CONTROL));
+
+    Host As hostControl.DefaultHostControlVariant:
+        OnCancel: =false
+        OnEdit: =false
+        OnNew: =false
+        OnSave: =false
+        OnView: =false
+

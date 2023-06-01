@@ -1,0 +1,22 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_azuremysql",
+    "CdpRevision": {
+      "BaseUrl": "/",
+      "LastChangedTimeString": "2023-04-24T19:06:20.1660000Z",
+      "RevisionNumber": 1
+    },
+    "ConnectedDataSourceInfoNameMapping": {
+      "CAPACIDAD": "CAPACIDAD",
+      "CVE_ESP": "CVE_ESP",
+      "ESTADO": "ESTADO",
+      "ID_SALON": "ID_SALON"
+    },
+    "DatasetName": "bd-escuela.mysql.database.azure.com,escuela",
+    "EncodeDataset": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "Name": "escuela.salones",
+    "Type": "ConnectedDataSourceInfo"
+  }
+]

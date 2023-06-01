@@ -1,0 +1,91 @@
+{
+  "6cfe292c-67bb-436f-a4cc-34e173346af3": {
+    "connectionRef": {
+      "apiTier": "Premium",
+      "authenticationType": "mysqlAuthentication",
+      "displayName": "Azure Database for MySQL",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1629/1.0.1629.3253/azuremysql/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_azuremysql",
+      "parameterHints": {},
+      "parameterHintsV2": {},
+      "sharedConnectionId": "/providers/microsoft.powerapps/apis/shared_azuremysql/connections/73a37d28075d41e1b1e6f042a8eed33a"
+    },
+    "datasets": {
+      "bd-escuela.mysql.database.azure.com,escuela": {
+        "dataSources": {
+          "escuela.salones": {
+            "tableName": "[escuela].[salones]"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "escuela.salones"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "6cfe292c-67bb-436f-a4cc-34e173346af3"
+  },
+  "723b2fbc-d579-4b62-82dc-e9022e79c478": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Usuarios de Office 365",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1626/1.0.1626.3238/office365users/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365users",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "UsuariosdeOffice365"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "723b2fbc-d579-4b62-82dc-e9022e79c478"
+  },
+  "883e6abf-888d-4e89-a265-55df8376663b": {
+    "connectionRef": {
+      "apiTier": "Premium",
+      "authenticationType": "mysqlAuthentication",
+      "displayName": "Azure Database for MySQL",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1629/1.0.1629.3253/azuremysql/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_azuremysql",
+      "parameterHints": {},
+      "parameterHintsV2": {},
+      "sharedConnectionId": "/providers/microsoft.powerapps/apis/shared_azuremysql/connections/b52c7a3cdc144869a90ef9d9be61ff30"
+    },
+    "datasets": {
+      "bd-escuela.mysql.database.azure.com,escuela": {
+        "dataSources": {
+          "escuela.accesossa": {
+            "tableName": "[escuela].[accesossa]"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "escuela.accesossa"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "883e6abf-888d-4e89-a265-55df8376663b"
+  },
+  "efbd1f95-8a0b-46ab-8979-4c94dbd10c4e": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Custom Vision",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1625/1.0.1625.3226/cognitiveservicescustomvision/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_cognitiveservicescustomvision",
+      "parameterHints": {},
+      "parameterHintsV2": {},
+      "sharedConnectionId": "/providers/microsoft.powerapps/apis/shared_cognitiveservicescustomvision/connections/8b2133fd711c4015a154bd9877b658d6"
+    },
+    "datasets": {},
+    "dataSources": [
+      "CustomVision"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "efbd1f95-8a0b-46ab-8979-4c94dbd10c4e"
+  }
+}

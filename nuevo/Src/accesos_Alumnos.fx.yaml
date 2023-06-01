@@ -1,0 +1,109 @@
+"accesos_Alumnos As screen.'tabletAutoLayout_SplitScreen_ver1.0'":
+    Fill: =RGBA(29, 29, 29, 1)
+    LoadingSpinnerColor: =RGBA(12, 126, 44, 1)
+
+    DataTable1 As dataTable.datatable:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        BorderStyle: =BorderStyle.Solid
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        Font: =Font.'Open Sans'
+        FontWeight: =FontWeight.Normal
+        HeadingColor: =RGBA(255, 255, 255, 1)
+        HeadingFill: =RGBA(12, 126, 44, 1)
+        HeadingFont: =Font.'Open Sans'
+        HeadingFontWeight: =FontWeight.Normal
+        HeadingSize: =35
+        Height: =548
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(53, 74, 36, .2)
+        InputFill: =RGBA(0, 0, 0, 1)
+        InvertedColor: =RGBA(255, 255, 255, 1)
+        Items: |
+            =//'escuela.accesossa'
+            Filter('escuela.accesossa',Text( DateTimeValue( Left(Text(FECHA),10)),DateTimeFormat.ShortDate)=Text(calendario.SelectedDate))
+        LinkColor: =ColorFade(RGBA(0, 134, 208, 1), 30%)
+        PrimaryColor1: =RGBA(12, 126, 44, 1)
+        PrimaryColor2: =RGBA(135, 190, 82, 1)
+        PrimaryColor3: =RGBA(53, 74, 36, 1)
+        SelectedColor: =RGBA(255, 255, 255, 1)
+        SelectedFill: =RGBA(12, 126, 44, .4)
+        Size: =20
+        Width: =931
+        X: =234
+        Y: =186
+        ZIndex: =1
+
+        FECHA_Columna1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="FECHA"
+            FieldName: ="FECHA"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =1
+            Text: |-
+                =
+                //DateTimeValue(Left(Text(ThisItem.FECHA);10); "yyyy-mm-dd")
+                //Left(Text(ThisItem.FECHA);10)
+                Text( DateTimeValue( Left(Text(ThisItem.FECHA),10)),DateTimeFormat.ShortDate)
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+        ENTRADA_Columna1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="ENTRADA"
+            FieldName: ="ENTRADA"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =2
+            Text: |-
+                =With( 
+                    Match( ThisItem.ENTRADA, "PT(?:(?<hours>\d+)H)?(?:(?<minutes>\d+)M)?(?:(?<seconds>\d+)S)?" ),
+                    Time( Value( hours ), Value( minutes ), Value( seconds ) )
+                )
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =2
+
+        SALIDA_Columna1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="SALIDA"
+            FieldName: ="SALIDA"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =5
+            Text: |-
+                =
+                With( 
+                    Match( ThisItem.SALIDA, "PT(?:(?<hours>\d+)H)?(?:(?<minutes>\d+)M)?(?:(?<seconds>\d+)S)?" ),
+                    Time( Value( hours ), Value( minutes ), Value( seconds ) )
+                )
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =5
+
+    calendario As datepicker:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        CalendarHeaderFill: =RGBA(12, 126, 44, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 0, 0, 1)
+        HoverDateFill: =RGBA(53, 74, 36, 1)
+        IconBackground: =RGBA(12, 126, 44, 1)
+        SelectedDateFill: =RGBA(12, 126, 44, 1)
+        Width: =214
+        X: =536
+        Y: =58
+        ZIndex: =2
+

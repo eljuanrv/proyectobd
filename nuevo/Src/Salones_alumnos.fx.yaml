@@ -1,0 +1,111 @@
+Salones_alumnos As screen:
+    Fill: =RGBA(29, 29, 29, 1)
+    LoadingSpinnerColor: =RGBA(12, 126, 44, 1)
+
+    "'47' As label":
+        Align: =Align.Center
+        BorderColor: =RGBA(135, 190, 82, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: |-
+            =//RGBA(141; 198; 63; 1)
+            If(cuarenta_siete.ESTADO="OCUPADO",RGBA(141, 0, 0, 1),RGBA(141, 198, 63, 1))
+        FontWeight: =FontWeight.Bold
+        Height: =162
+        Size: =60
+        Text: ="47"
+        Width: =219
+        X: =166
+        Y: =224
+        ZIndex: =1
+
+    "'46' As label":
+        Align: =Align.Center
+        BorderColor: =RGBA(135, 190, 82, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(141, 198, 63, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =162
+        Size: =60
+        Text: ="46"
+        Width: =219
+        X: =574
+        Y: =224
+        ZIndex: =2
+
+    "'45' As label":
+        Align: =Align.Center
+        BorderColor: =RGBA(135, 190, 82, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(141, 198, 63, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =162
+        Size: =60
+        Text: ="45"
+        Width: =219
+        X: =993
+        Y: =224
+        ZIndex: =3
+
+    "'44' As label":
+        Align: =Align.Center
+        BorderColor: =RGBA(135, 190, 82, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(141, 198, 63, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =162
+        Size: =60
+        Text: ="44"
+        Width: =219
+        X: =166
+        Y: =530
+        ZIndex: =4
+
+    "'43' As label":
+        Align: =Align.Center
+        BorderColor: =RGBA(135, 190, 82, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(141, 198, 63, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =162
+        Size: =60
+        Text: ="43"
+        Width: =219
+        X: =574
+        Y: =530
+        ZIndex: =5
+
+    "'42' As label":
+        Align: =Align.Center
+        BorderColor: =RGBA(135, 190, 82, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(141, 198, 63, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =162
+        Size: =60
+        Text: ="42"
+        Width: =219
+        X: =993
+        Y: =530
+        ZIndex: =6
+
+    Label3 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(135, 190, 82, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(152, 208, 70, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =82
+        Size: =30
+        Text: ="Salones Disponibles"
+        Width: =523
+        X: =422
+        Y: =53
+        ZIndex: =7
+

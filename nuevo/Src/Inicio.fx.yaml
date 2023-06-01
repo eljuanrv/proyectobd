@@ -1,0 +1,80 @@
+Inicio As screen:
+    Fill: =RGBA(29, 29, 29, 1)
+    LoadingSpinnerColor: =RGBA(12, 126, 44, 1)
+
+    Image1 As image:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        BorderStyle: =BorderStyle.Dashed
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =384
+        Image: |-
+            =If(
+                !IsBlank(usuario),
+                UsuariosdeOffice365.UserPhotoV2(usuario),
+                SampleImage
+            )
+        ImagePosition: =ImagePosition.Fill
+        RadiusBottomLeft: =Image1.Height
+        RadiusBottomRight: =Image1.Height
+        RadiusTopLeft: =Image1.Height
+        RadiusTopRight: =Image1.Height
+        Width: =384
+        X: =809
+        Y: =52
+        ZIndex: =1
+
+    nombre As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(135, 190, 82, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(12, 126, 44, 1)
+        Height: =124
+        Size: =33
+        Text: =UsuariosdeOffice365.UserProfileV2(usuario).displayName
+        Width: =647
+        X: =678
+        Y: =492
+        ZIndex: =3
+
+    Button2 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(12, 126, 44, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =150
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(12, 126, 44, 1), -20%)
+        RadiusBottomLeft: =150
+        RadiusBottomRight: =150
+        RadiusTopLeft: =150
+        RadiusTopRight: =150
+        Size: =30
+        Text: ="Accesos"
+        Width: =387
+        X: =158
+        Y: =136
+        ZIndex: =4
+
+    Button2_1 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(12, 126, 44, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =150
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(12, 126, 44, 1), -20%)
+        RadiusBottomLeft: =150
+        RadiusBottomRight: =150
+        RadiusTopLeft: =150
+        RadiusTopRight: =150
+        Size: =30
+        Text: ="Administrar BD"
+        Width: =387
+        X: =158
+        Y: =436
+        ZIndex: =5
+
