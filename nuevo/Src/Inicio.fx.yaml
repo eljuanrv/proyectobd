@@ -7,7 +7,7 @@ Inicio As screen:
         BorderStyle: =BorderStyle.Dashed
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =384
+        Height: =300
         Image: |-
             =If(
                 !IsBlank(usuario),
@@ -19,24 +19,10 @@ Inicio As screen:
         RadiusBottomRight: =Image1.Height
         RadiusTopLeft: =Image1.Height
         RadiusTopRight: =Image1.Height
-        Width: =384
-        X: =809
-        Y: =52
+        Width: =331
+        X: =829
+        Y: =236
         ZIndex: =1
-
-    nombre As label:
-        Align: =Align.Center
-        BorderColor: =RGBA(135, 190, 82, 1)
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(12, 126, 44, 1)
-        Height: =124
-        Size: =33
-        Text: =UsuariosdeOffice365.UserProfileV2(usuario).displayName
-        Width: =647
-        X: =678
-        Y: =492
-        ZIndex: =3
 
     Button2 As button:
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -44,7 +30,7 @@ Inicio As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(12, 126, 44, 1)
         FontWeight: =FontWeight.Semibold
-        Height: =150
+        Height: =92
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(12, 126, 44, 1), -20%)
         OnSelect: =Navigate(Salones_alumnos)
@@ -54,9 +40,9 @@ Inicio As screen:
         RadiusTopRight: =150
         Size: =30
         Text: ="Accesos"
-        Width: =387
-        X: =158
-        Y: =136
+        Width: =299
+        X: =156
+        Y: =340
         ZIndex: =4
 
     Button2_1 As button:
@@ -65,7 +51,7 @@ Inicio As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(12, 126, 44, 1)
         FontWeight: =FontWeight.Semibold
-        Height: =150
+        Height: =94
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(12, 126, 44, 1), -20%)
         OnSelect: =Navigate(acceso)
@@ -73,10 +59,62 @@ Inicio As screen:
         RadiusBottomRight: =150
         RadiusTopLeft: =150
         RadiusTopRight: =150
-        Size: =30
+        Size: =25
         Text: ="Administrar Maestros"
-        Width: =387
-        X: =158
-        Y: =436
+        Width: =304
+        X: =156
+        Y: =607
         ZIndex: =5
+
+    Button2_2 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(12, 126, 44, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =117
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(12, 126, 44, 1), -20%)
+        RadiusBottomLeft: =150
+        RadiusBottomRight: =150
+        RadiusTopLeft: =150
+        RadiusTopRight: =150
+        Size: =30
+        Text: ="Fast Check"
+        Width: =486
+        X: =442
+        Y: =46
+        ZIndex: =6
+
+    Button2_3 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(12, 126, 44, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =117
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(12, 126, 44, 1), -20%)
+        RadiusBottomLeft: =150
+        RadiusBottomRight: =150
+        RadiusTopLeft: =150
+        RadiusTopRight: =150
+        Size: =30
+        Text: =UsuariosdeOffice365.UserProfileV2(usuario).displayName
+        Width: =486
+        X: =767
+        Y: =595
+        ZIndex: =7
+
+    Icon3 As icon.LightningBolt:
+        BorderColor: =RGBA(135, 190, 82, 1)
+        Color: =RGBA(135, 190, 82, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =154
+        Icon: =Icon.LightningBolt
+        Width: =229
+        X: =1116
+        Y: =46
+        ZIndex: =9
 
